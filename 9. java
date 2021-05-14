@@ -38,7 +38,7 @@ public class accelerator {
                 }
 
                 else if (uInput2 == 0) {
-                    System.out.print("The program is stopped.");
+                    System.out.print("Program END");
                 }
             }
         }
