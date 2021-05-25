@@ -1,0 +1,27 @@
+import java.util.Stack;
+import java.util.Scanner;
+class Palindrome_Using_Stack {
+
+    public static void main(String[] args) {
+
+        System.out.print("Integer: ");
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        Stack stack = new Stack();
+
+        for (int x = 0; x < input.length(); x++) {
+            stack.push(input.charAt(x));
+        }
+
+        String reverse = "";
+
+        while (!stack.isEmpty()) {
+            reverse = reverse + stack.pop();
+        }
+
+        if (input.equals(reverse))
+            System.out.println("It is a palindrome.");
+        else
+            System.out.println("It is not a palindrome.");
+    }
+}
