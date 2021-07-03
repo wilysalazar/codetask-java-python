@@ -14,12 +14,12 @@ interface temperature {
 
 public class Iface {
     public static void main(String[] args) {
-        System.out.println("Enter temperature in fahrenheit");
+        System.out.println("enter the temperature in fahrenheit scale- ");
         Scanner scan = new Scanner(System.in);
         float t = scan.nextFloat();
 
         temperature conver = new fahrenheitcelsius();
         float celsius = conver.temp(t);
-        System.out.println("Temp in celsius is:" + celsius);
+        System.out.println("temperature in celsius scale is- " + celsius);
     }
 }
